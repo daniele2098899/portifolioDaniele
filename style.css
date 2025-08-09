@@ -1,0 +1,364 @@
+/* Geral */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #111827;
+  /* bg-gray-900 */
+  color: #f3f4f6;
+  /* text-gray-100 */
+  margin: 0;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  /* fixa no topo */
+  background-color: #1f2937;
+  width: 100%;
+  z-index: 50;
+  box-shadow: 0 2rem, 2rem rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: #c084fc;
+  /* text-purple-400 */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: #d8b4fe;
+  /* text-purple-300 */
+}
+
+/* Espaçamento para compensar navbar fixa */
+section {
+  scroll-margin-top: 80px;
+  /* compensa o tamanho da navbar */
+  padding: 4rem 1.5rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 1.875rem;
+  color: #d8b4fe;
+  margin-bottom: 1rem;
+}
+
+section p,
+section li,
+section span {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  line-height: 1.75rem;
+}
+
+/* Header */
+header {
+  padding-top: 8rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header img.foto {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 9999px;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 4px solid #a855f7;
+  transition: transform 0.3s;
+  margin-top: 30px;
+}
+
+header img.foto:hover {
+  transform: scale(1.05);
+}
+
+header h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #d8b4fe;
+  text-shadow: 1px 1px 2px black;
+}
+
+header p {
+  color: #d1d5db;
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+}
+
+header div a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  color: white;
+  text-decoration: none;
+}
+
+header a:nth-child(1) {
+  background-color: #9333ea;
+}
+
+header a:nth-child(1):hover {
+  background-color: #7e22ce;
+}
+
+header a:nth-child(2) {
+  background-color: #2563eb;
+}
+
+header a:nth-child(2):hover {
+  background-color: #1d4ed8;
+}
+
+header a:nth-child(3) {
+  background-color: #374151;
+}
+
+header a:nth-child(3):hover {
+  background-color: #4b5563;
+}
+
+header a:nth-child(4) {
+  background-color: #16a34a;
+}
+
+header a:nth-child(4):hover {
+  background-color: #15803d;
+}
+
+/* Habilidades Técnicas */
+#habilidades {
+  background-color: #1f2937;
+}
+
+#habilidades .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 10px;
+  justify-content: center;
+}
+
+#habilidades span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #94a4a8;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #000;
+  /* para melhor contraste */
+}
+
+/* Ícones de habilidades (cores) */
+.html-icon {
+  color: #e44d26;
+}
+
+.css-icon {
+  color: #264de4;
+}
+
+.js-icon {
+  color: #f0db4f;
+}
+
+.java-icon {
+  color: #f89820;
+}
+
+.node-icon {
+  color: #3c873a;
+}
+
+.express-icon {
+  color: #000000;
+}
+
+.mongo-icon {
+  color: #4DB33D;
+}
+
+.mongoose-icon {
+  color: #800000;
+}
+
+.salesforce-icon {
+  color: #00A1E0;
+}
+
+.git-icon {
+  color: #f1502f;
+}
+
+.github-icon {
+  color: #333;
+}
+
+.rest-icon {
+  color: #555;
+}
+
+.json-icon {
+  color: #f29111;
+}
+
+.vscode-icon {
+  color: #007ACC;
+}
+
+
+#projetos {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-bottom: 4rem;
+}
+
+.projetos-container {
+  display: flex;
+  flex-wrap: nowrap;
+  /* mantém todos em uma linha */
+  gap: 20px;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: #9333ea transparent;
+}
+
+.projetos-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projetos-container::-webkit-scrollbar-thumb {
+  background-color: #9333ea;
+  border-radius: 4px;
+}
+
+.projetos-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.projeto-card {
+  background-color: #1f2937;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  flex: 0 0 300px;
+  /* largura fixa */
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.projeto-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projeto-card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.projeto-card h3 {
+  font-size: 1.25rem;
+  color: #d8b4fe;
+  margin: 12px 0 8px;
+}
+
+.projeto-card p {
+  color: #d1d5db;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.projeto-card a {
+  color: #9333ea;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #9333ea;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.projeto-card a:hover {
+  background-color: #9333ea;
+  color: #fff;
+}
+
+/* Certificações */
+#certificacoes {
+  margin-top: 4rem;
+  background-color: #1f2937;
+}
+
+#certificacoes ul {
+  padding-left: 1rem;
+  list-style-position: inside;
+  margin: 0;
+}
+
+#certificacoes li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Contato */
+#contato a {
+  text-decoration: underline;
+}
+
+#contato a[href^="mailto:"] {
+  color: #60a5fa;
+}
+
+#contato a[href*="wa.me"] {
+  color: #4ade80;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  color: #9ca3af;
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1rem 0;
+}
